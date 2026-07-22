@@ -12,8 +12,21 @@ export default defineConfig({
     tanstackStart({
       prerender: {
         enabled: true,
-        crawlLinks: true,
+        crawlLinks: false,
         autoSubfolderIndex: true,
+        routes: [
+          "/",
+          "/about",
+          "/blog",
+          "/blog/cbd-co-o-nom-vieme",
+          "/blog/thc-neutralne-info",
+          "/blog/whx-dubai-2026",
+          "/contact",
+          "/cookies",
+          "/privacy",
+          "/products",
+          "/terms",
+        ],
       },
     }),
     react(),
